@@ -1,0 +1,14 @@
+<resources>
+    <!-- Toolbar -->
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="taille_titre">16dp</dimen>
+    <dimen name="marge_horizontale">10dp</dimen>
+
+    <!-- Bordure -->
+    <dimen name="border_width_rectangle">1dp</dimen>
+    <dimen name="dash_gap_width">2dp</dimen>
+    <dimen name="dash_width">1dp</dimen>
+
+    <!-- Activité principale -->
+
+</resources>

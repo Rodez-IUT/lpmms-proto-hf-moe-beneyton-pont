@@ -3,6 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="background">#046b33</color>
-    <color name="titre">#ffffff</color>
+    <color name="background_toolbar">#046b33</color>
+    <color name="titre_toolbar">#ffffff</color>
+    <color name="background_rectangle">#fafafa</color>
+    <color name="border_color_rectangle">#046b33</color>
 </resources>
