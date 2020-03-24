@@ -6,8 +6,8 @@
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>
-    <dimen name="dash_gap_width">2dp</dimen>
-    <dimen name="dash_width">1dp</dimen>
+    <dimen name="dash_gap_width">10dp</dimen>
+    <dimen name="dash_width">10dp</dimen>
 
     <!-- Activité principale -->
 

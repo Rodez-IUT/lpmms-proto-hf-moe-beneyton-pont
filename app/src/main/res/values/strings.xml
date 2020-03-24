@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Training Plan</string>
+    <string name="niveau">Mon niveau : </string>
+    <string name="objectif" >Mon objectif : </string>
+    <string name="sport">Mon sport :</string>
+    <string name="séance">Séance / Semaine :</string>
+    <string name="duree">Durée du planing :</string>
+    <string name="Valider">Valider</string>
+    <string name="planning">Planning</string>
+
+
 </resources>
