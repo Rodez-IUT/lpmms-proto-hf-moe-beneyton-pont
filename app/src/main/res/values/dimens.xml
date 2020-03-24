@@ -1,8 +1,9 @@
 <resources>
     <!-- Toolbar -->
     <dimen name="elevation">4dp</dimen>
-    <dimen name="taille_titre">16dp</dimen>
+    <dimen name="taille_titre">16sp</dimen>
     <dimen name="marge_horizontale">10dp</dimen>
+    <dimen name="marge_verticale">5dp</dimen>
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>

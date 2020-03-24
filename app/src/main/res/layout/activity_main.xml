@@ -5,31 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_marginHorizontal="@dimen/marge_horizontale">
+    android:orientation="vertical">
+
     <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Questionnaire"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/marge_verticale"/>
 
-        android:text="@string/niveau" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/objectif" />
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/marge_horizontale"
+        android:layout_marginVertical="@dimen/marge_verticale">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/niveau" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/marge_horizontale"
+        android:layout_marginVertical="@dimen/marge_verticale">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objectif" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bordure"
-        >
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/marge_horizontale"
+        android:layout_marginVertical="@dimen/marge_verticale">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/planning"/>
+            android:text="@string/planning"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/marge_verticale">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/niveau"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
