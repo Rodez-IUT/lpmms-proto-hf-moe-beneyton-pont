@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/niveau" />
+            android:text="@string/texte_niveau" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/objectif" />
+            android:text="@string/texte_objectif" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/planning"
+            android:text="@string/texte_planning"
             android:layout_gravity="center"
             android:gravity="center"/>
 
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sport"/>
+                android:text="@string/texte_sport"/>
 
         </LinearLayout>
 
@@ -81,7 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/seance"/>
+                android:text="@string/texte_seance"/>
 
         </LinearLayout>
 
