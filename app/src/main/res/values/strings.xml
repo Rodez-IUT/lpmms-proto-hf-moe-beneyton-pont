@@ -3,10 +3,9 @@
     <string name="niveau">Mon niveau : </string>
     <string name="objectif" >Mon objectif : </string>
     <string name="sport">Mon sport :</string>
-    <string name="séance">Séance / Semaine :</string>
+    <string name="seance">Séance / Semaine :</string>
     <string name="duree">Durée du planing :</string>
-    <string name="Valider">Valider</string>
+    <string name="btn_valider">Valider</string>
     <string name="planning">Planning</string>
-
 
 </resources>
