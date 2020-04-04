@@ -6,88 +6,149 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-
+    
     <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Questionnaire"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginVertical="@dimen/marge_verticale"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="@dimen/marge_horizontale"
-        android:layout_marginVertical="@dimen/marge_verticale">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texte_niveau" />
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </Spinner>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="@dimen/marge_horizontale"
-        android:layout_marginVertical="@dimen/marge_verticale">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texte_objectif" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bordure"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/marge_horizontale"
-        android:layout_marginVertical="@dimen/marge_verticale">
+        style="@style/Contour">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/texte_planning"
-            android:layout_gravity="center"
-            android:gravity="center"/>
+            android:text="Questionnaire"
+            style="@style/Titre" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="@dimen/marge_verticale">
-
+            android:orientation="horizontal">
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/texte_sport"/>
+                android:text="@string/texte_niveau"
+                style="@style/Libelle"/>
 
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marge_libelle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_objectif"
+                style="@style/Libelle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Bordure">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/texte_seance"/>
+                android:text="@string/texte_planning"
+                style="@style/TitreRubrique"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texte_sport"
+                    style="@style/Libelle"/>
+                
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marge_libelle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texte_seance"
+                    style="@style/Libelle" />
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_less"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:text="-" />
+
+                    <EditText
+                        android:id="@+id/et_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/btn_more"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:text="+" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_duree"
+                style="@style/Libelle"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <!--<CalendarView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CalendarView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>-->
+            </LinearLayout>
 
         </LinearLayout>
 
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_valider"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

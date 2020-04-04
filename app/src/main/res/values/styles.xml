@@ -1,11 +1,39 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Contour" parent="AppTheme">
+        <item name="android:layout_marginRight">@dimen/marge_horizontale</item>
+        <item name="android:layout_marginLeft">@dimen/marge_horizontale</item>
+        <item name="android:layout_marginTop">@dimen/marge_verticale</item>
+        <item name="android:layout_marginBottom">@dimen/marge_verticale</item>
+    </style>
+
+    <style name="TitreRubrique" parent="AppTheme">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Titre" parent="TitreRubrique">
+        <item name="android:textColor">@color/background_toolbar</item>
+        <item name="android:textSize">@dimen/taille_titre</item>
+    </style>
+
+    <style name="Libelle" parent="AppTheme">
+        <item name="android:textSize">@dimen/taille_police</item>
+        <item name="android:layout_marginTop">@dimen/marge_libelle</item>
+    </style>
+
+    <style name="Bordure" parent="AppTheme">
+        <item name="android:background">@drawable/bordure</item>
+        <item name="android:layout_marginTop">@dimen/marge_libelle</item>
+        <item name="android:layout_marginBottom">@dimen/marge_libelle</item>
     </style>
 
 </resources>

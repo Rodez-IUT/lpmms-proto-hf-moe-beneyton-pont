@@ -4,6 +4,8 @@
     <dimen name="taille_titre">16sp</dimen>
     <dimen name="marge_horizontale">10dp</dimen>
     <dimen name="marge_verticale">5dp</dimen>
+    <dimen name="taille_police">14sp</dimen>
+    <dimen name="marge_libelle">12dp</dimen>
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>
