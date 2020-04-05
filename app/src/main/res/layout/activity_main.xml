@@ -1,241 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-    
+
     <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         style="@style/Contour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            style="@style/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texte_auth" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:hint="@string/indice_email"
+            android:inputType="textWebEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:hint="@string/indice_mdp"
+            android:inputType="textWebEmailAddress" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/texte_questionnaire"
-            style="@style/Titre" />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/mdp_oublie"
+            android:textStyle="" />
 
-        <TableLayout
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/rb_souvenir"
+            style="@style/Libelle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:stretchColumns="3">
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/texte_niveau"
-                    style="@style/Libelle"
-                    android:layout_column="0"/>
-
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/marge_libelle"
-                    android:layout_column="1"
-                    android:entries="@array/niveaux"/>
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/texte_objectif"
-                    style="@style/Libelle"
-                    android:layout_column="0"/>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/indice_objectif"
-                        android:layout_marginTop="@dimen/marge_verticale"
-                        android:inputType="numberDecimal">
-                        <requestFocus/>
-                    </EditText>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|end"
-                        android:paddingEnd="@dimen/padding_icone"
-                        android:text="@string/unite_objectif"
-                        android:layout_marginTop="@dimen/marge_verticale"/>
-
-                </FrameLayout>
-
-            </TableRow>
-
-        </TableLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/Bordure">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/texte_planning"
-                style="@style/TitreRubrique"/>
-            
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:stretchColumns="3">
-                <TableRow>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/texte_sport"
-                        style="@style/Libelle"
-                        android:layout_column="0"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_column="1"
-                        android:layout_marginTop="@dimen/marge_libelle">
-
-                        <ImageView
-                            android:layout_width="@dimen/dimension_image"
-                            android:layout_height="@dimen/dimension_image"
-                            android:src="@drawable/velo" />
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/switch_marge_gauche" />
-                        <ImageView
-                            android:layout_width="@dimen/dimension_image"
-                            android:layout_height="@dimen/dimension_image"
-                            android:src="@drawable/coureur"/>
-                    </LinearLayout>
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/texte_seance"
-                        style="@style/Libelle"
-                        android:layout_column="0"/>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1">
-                        <Button
-                            android:onClick="reduire"
-                            android:layout_width="@dimen/btn_moreless_width"
-                            android:layout_height="@dimen/btn_moreless_height"
-                            android:text="@string/moins"/>
-
-                        <EditText
-                            android:id="@+id/nb_seance"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:enabled="false"
-                            android:text="@string/nb_defaut"
-                            android:textColor="@color/noir"/>
-
-                        <Button
-                            android:onClick="augmenter"
-                            android:layout_width="@dimen/btn_moreless_width"
-                            android:layout_height="@dimen/btn_moreless_height"
-                            android:text="@string/plus"/>
-                    </LinearLayout>
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/texte_duree"
-                        style="@style/Libelle"
-                        android:layout_column="0"/>
-                </TableRow>
-                <TableRow>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_column="0"
-                        android:layout_span="4"
-                        android:layout_gravity="center">
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <EditText
-                                android:id="@+id/debutDuree"
-                                android:onClick="afficherCalendrierDebut"
-                                android:layout_width="@dimen/et_duree_width"
-                                android:layout_height="wrap_content"
-                                android:inputType="date"
-                                android:clickable="true">
-                                <requestFocus/>
-                            </EditText>
-
-                            <ImageView
-                                android:layout_width="@dimen/dimension_calendrier"
-                                android:layout_height="@dimen/dimension_calendrier"
-                                android:layout_gravity="center_vertical|end"
-                                android:src="@drawable/calendrier"
-                                android:paddingLeft="@dimen/padding_icone"
-                                android:paddingRight="@dimen/padding_icone"/>
-
-                        </FrameLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/moins"
-                            android:textSize="@dimen/taille_intervalle"
-                            android:layout_gravity="center"
-                            android:gravity="center" />
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                            <EditText
-                                android:id="@+id/finDuree"
-                                android:onClick="afficherCalendrierFin"
-                                android:layout_width="@dimen/et_duree_width"
-                                android:layout_height="wrap_content"
-                                android:inputType="date"
-                                android:clickable="true">
-                                <requestFocus/>
-                            </EditText>
-
-                            <ImageView
-                                android:layout_width="@dimen/dimension_calendrier"
-                                android:layout_height="@dimen/dimension_calendrier"
-                                android:layout_gravity="center_vertical|end"
-                                android:src="@drawable/calendrier"
-                                android:paddingLeft="@dimen/padding_icone"
-                                android:paddingRight="@dimen/padding_icone"/>
-
-                        </FrameLayout>
-
-                    </LinearLayout>
-
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:text="@string/texte_souvenir"
+            android:checked="false"
+            android:onClick="decocher"/>
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_valider"/>
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:text="@string/btn_ok" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:padding="0dp"
+            android:src="@drawable/connexion_fbk" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marge_libelle"
+            android:layout_marginBottom="@dimen/marge_libelle"
+            android:padding="0dp"
+            android:src="@drawable/connexion_twitter" />
     </LinearLayout>
+
+    <include layout="@layout/barre_creation_compte" />
+
 </LinearLayout>

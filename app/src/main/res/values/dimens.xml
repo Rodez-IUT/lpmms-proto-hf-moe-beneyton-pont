@@ -3,7 +3,7 @@
     <dimen name="elevation">4dp</dimen>
     <dimen name="marge_gauche_titre">125dp</dimen>
 
-    <!-- Activité principale -->
+    <!-- Activités -->
     <dimen name="taille_titre">20sp</dimen>
     <dimen name="taille_police">18sp</dimen>
     <dimen name="taille_intervalle">40sp</dimen>

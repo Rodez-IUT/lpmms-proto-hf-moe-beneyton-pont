@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_alignParentBottom="true">
+
+    <View
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:background="@color/background_toolbar"/>
+
+    <TextView
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="@dimen/marge_libelle"
+        android:layout_marginTop="@dimen/marge_libelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creation_compte"
+        style="@style/Libelle"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

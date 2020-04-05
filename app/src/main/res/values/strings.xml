@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">Training Plan</string>
+
+    <!-- Activité Formulaire -->
     <string name="texte_questionnaire">Questionnaire</string>
     <string name="texte_niveau">Mon niveau : </string>
-    <string name="texte_objectif" >Mon objectif : </string>
+    <string name="texte_objectif">Mon objectif : </string>
     <string name="texte_sport">Mon sport :</string>
     <string name="texte_seance">Séance / Semaine :</string>
     <string name="texte_duree">Durée du planing :</string>
-    <string name="btn_valider">Valider</string>
     <string name="texte_planning">Planning</string>
+    <string name="btn_valider">Valider</string>
     <string name="moins">-</string>
     <string name="plus">+</string>
     <string name="nb_defaut">1</string>
@@ -18,4 +20,14 @@
         <item>Intermédiaire</item>
         <item>Confirmé</item>
     </string-array>
+
+    <!-- Activité de Connexion (MainActivity) -->
+    <string name="texte_auth">S\'authentifier</string>
+    <string name="indice_email">Adresse Email</string>
+    <string name="indice_mdp">Mot de passe</string>
+    <string name="mdp_oublie"><u>Mot de passe oublié ?</u></string>
+    <string name="texte_souvenir">Se souvenir de moi</string>
+    <string name="btn_ok">ok</string>
+    <string name="creation_compte"><u>Vous n\'avez pas de compte ?</u>\n <u>Créez-le !</u></string>
+
 </resources>
