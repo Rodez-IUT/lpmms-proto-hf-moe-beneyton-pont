@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Questionnaire"
+            android:text="@string/texte_questionnaire"
             style="@style/Titre" />
 
         <TableLayout

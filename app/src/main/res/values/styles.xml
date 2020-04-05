@@ -38,4 +38,17 @@
         <item name="android:layout_marginBottom">@dimen/marge_libelle</item>
     </style>
 
+    <style name="Toolbar" parent="AppTheme">
+        <item name="android:background">@color/background_toolbar</item>
+        <item name="android:elevation">@dimen/elevation</item>
+    </style>
+
+    <style name="TitreToolbar" parent="AppTheme">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/titre_toolbar</item>
+        <item name="android:textSize">@dimen/taille_titre</item>
+    </style>
+
 </resources>
