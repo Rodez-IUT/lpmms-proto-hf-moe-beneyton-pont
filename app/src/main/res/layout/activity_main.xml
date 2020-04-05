@@ -37,7 +37,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/marge_libelle"
-                    android:layout_column="1"/>
+                    android:layout_column="1"
+                    android:entries="@array/niveaux"/>
             </TableRow>
 
             <TableRow>
@@ -47,6 +48,30 @@
                     android:text="@string/texte_objectif"
                     style="@style/Libelle"
                     android:layout_column="0"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/indice_objectif"
+                        android:layout_marginTop="@dimen/marge_verticale"
+                        android:inputType="numberDecimal">
+                        <requestFocus/>
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:paddingEnd="@dimen/padding_icone"
+                        android:text="@string/unite_objectif"
+                        android:layout_marginTop="@dimen/marge_verticale"/>
+
+                </FrameLayout>
+
             </TableRow>
 
         </TableLayout>
@@ -85,16 +110,15 @@
                         <ImageView
                             android:layout_width="@dimen/dimension_image"
                             android:layout_height="@dimen/dimension_image"
-                            android:src="@mipmap/ic_launcher"
-                            />
+                            android:src="@drawable/velo" />
                         <Switch
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                             />
+                            android:layout_marginLeft="@dimen/switch_marge_gauche" />
                         <ImageView
                             android:layout_width="@dimen/dimension_image"
                             android:layout_height="@dimen/dimension_image"
-                            android:src="@mipmap/ic_launcher"/>
+                            android:src="@drawable/coureur"/>
                     </LinearLayout>
                 </TableRow>
                 <TableRow>
@@ -120,7 +144,7 @@
                             android:id="@+id/et_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:inputType="number"
+                            android:enabled="false"
                             android:text="@string/zero"/>
 
                         <Button
@@ -139,23 +163,71 @@
                         android:layout_column="0"/>
                 </TableRow>
                 <TableRow>
-                    <EditText android:layout_width="@dimen/et_duree_width"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_column="0"
-                        android:inputType="datetime"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/moins"
-                        android:textSize="@dimen/taille_intervalle"
-                        android:layout_column="1"
-                        android:layout_gravity="center"
-                        android:gravity="center"/>
-                    <EditText
-                        android:layout_width="@dimen/et_duree_width"
-                        android:layout_height="wrap_content"
-                        android:layout_column="2"
-                        android:inputType="datetime" />
+                        android:layout_span="4"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/debutDuree"
+                                android:onClick="afficherCalendrierDebut"
+                                android:layout_width="@dimen/et_duree_width"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:clickable="true">
+                                <requestFocus/>
+                            </EditText>
+
+                            <ImageView
+                                android:layout_width="@dimen/dimension_calendrier"
+                                android:layout_height="@dimen/dimension_calendrier"
+                                android:layout_gravity="center_vertical|end"
+                                android:src="@drawable/calendrier"
+                                android:paddingLeft="@dimen/padding_icone"
+                                android:paddingRight="@dimen/padding_icone"/>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moins"
+                            android:textSize="@dimen/taille_intervalle"
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/finDuree"
+                                android:onClick="afficherCalendrierFin"
+                                android:layout_width="@dimen/et_duree_width"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:clickable="true">
+                                <requestFocus/>
+                            </EditText>
+
+                            <ImageView
+                                android:layout_width="@dimen/dimension_calendrier"
+                                android:layout_height="@dimen/dimension_calendrier"
+                                android:layout_gravity="center_vertical|end"
+                                android:src="@drawable/calendrier"
+                                android:paddingLeft="@dimen/padding_icone"
+                                android:paddingRight="@dimen/padding_icone"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
                 </TableRow>
             </TableLayout>
         </LinearLayout>

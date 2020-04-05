@@ -29,6 +29,7 @@
     <style name="Libelle" parent="AppTheme">
         <item name="android:textSize">@dimen/taille_police</item>
         <item name="android:layout_marginTop">@dimen/marge_libelle</item>
+        <item name="android:layout_marginLeft">@dimen/marge_libelle</item>
     </style>
 
     <style name="Bordure" parent="AppTheme">

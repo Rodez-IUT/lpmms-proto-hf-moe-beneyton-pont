@@ -10,4 +10,11 @@
     <string name="moins">-</string>
     <string name="plus">+</string>
     <string name="zero">0</string>
+    <string name="indice_objectif">100</string>
+    <string name="unite_objectif">Km</string>
+    <string-array name="niveaux">
+        <item>Débutant</item>
+        <item>Intermédiaire</item>
+        <item>Confirmé</item>
+    </string-array>
 </resources>

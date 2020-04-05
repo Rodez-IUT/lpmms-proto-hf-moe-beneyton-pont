@@ -12,7 +12,10 @@
     <dimen name="dimension_image">25dp</dimen>
     <dimen name="btn_moreless_width">30dp</dimen>
     <dimen name="btn_moreless_height">40dp</dimen>
-    <dimen name="et_duree_width">155dp</dimen>
+    <dimen name="et_duree_width">150dp</dimen>
+    <dimen name="switch_marge_gauche">5dp</dimen>
+    <dimen name="padding_icone">5dp</dimen>
+    <dimen name="dimension_calendrier">30dp</dimen>
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>
