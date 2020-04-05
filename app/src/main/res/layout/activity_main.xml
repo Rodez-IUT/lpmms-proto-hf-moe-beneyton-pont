@@ -135,20 +135,20 @@
                         android:layout_height="wrap_content"
                         android:layout_column="1">
                         <Button
-                            android:id="@+id/btn_less"
+                            android:onClick="reduire"
                             android:layout_width="@dimen/btn_moreless_width"
                             android:layout_height="@dimen/btn_moreless_height"
                             android:text="@string/moins"/>
 
                         <EditText
-                            android:id="@+id/et_number"
+                            android:id="@+id/nb_seance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:enabled="false"
-                            android:text="@string/zero"/>
+                            android:text="@string/nb_defaut"/>
 
                         <Button
-                            android:id="@+id/btn_more"
+                            android:onClick="augmenter"
                             android:layout_width="@dimen/btn_moreless_width"
                             android:layout_height="@dimen/btn_moreless_height"
                             android:text="@string/plus"/>

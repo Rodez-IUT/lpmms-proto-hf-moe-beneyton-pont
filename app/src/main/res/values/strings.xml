@@ -10,7 +10,7 @@
     <string name="texte_planning">Planning</string>
     <string name="moins">-</string>
     <string name="plus">+</string>
-    <string name="zero">0</string>
+    <string name="nb_defaut">1</string>
     <string name="indice_objectif">100</string>
     <string name="unite_objectif">Km</string>
     <string-array name="niveaux">

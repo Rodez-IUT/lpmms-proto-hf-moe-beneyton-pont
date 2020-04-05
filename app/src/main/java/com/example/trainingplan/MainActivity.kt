@@ -11,16 +11,20 @@ import java.time.Year
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var nbSeance:EditText
     private lateinit var debutDuree: EditText
     private lateinit var finDuree: EditText
     private lateinit var myCalendar: Calendar
     private lateinit var dateDebut: DatePickerDialog.OnDateSetListener
     private lateinit var dateFin: DatePickerDialog.OnDateSetListener
 
+    val NB_MIN_SEANCE: Int = 1;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        nbSeance = findViewById(R.id.nb_seance)
         debutDuree = findViewById(R.id.debutDuree)
         finDuree = findViewById(R.id.finDuree)
         myCalendar = Calendar.getInstance()
@@ -48,6 +52,25 @@ class MainActivity : AppCompatActivity() {
                 updateDate(finDuree)
             }
         }
+    }
+
+
+    fun reduire(view: View) {
+        var nb = Integer.parseInt(nbSeance.text.toString())
+
+        if (nb > NB_MIN_SEANCE) {
+            nb--
+        }
+
+        nbSeance.setText(nb.toString())
+    }
+
+    fun augmenter(view: View) {
+        var nb = Integer.parseInt(nbSeance.text.toString())
+
+        nb++
+
+        nbSeance.setText(nb.toString())
     }
 
     /**
