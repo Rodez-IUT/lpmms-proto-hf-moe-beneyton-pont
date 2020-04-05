@@ -1,17 +1,22 @@
 <resources>
     <!-- Toolbar -->
     <dimen name="elevation">4dp</dimen>
-    <dimen name="taille_titre">16sp</dimen>
+
+    <!-- Activité principale -->
+    <dimen name="taille_titre">20sp</dimen>
+    <dimen name="taille_police">18sp</dimen>
+    <dimen name="taille_intervalle">40sp</dimen>
     <dimen name="marge_horizontale">10dp</dimen>
     <dimen name="marge_verticale">5dp</dimen>
-    <dimen name="taille_police">14sp</dimen>
     <dimen name="marge_libelle">12dp</dimen>
+    <dimen name="dimension_image">25dp</dimen>
+    <dimen name="btn_moreless_width">30dp</dimen>
+    <dimen name="btn_moreless_height">40dp</dimen>
+    <dimen name="et_duree_width">155dp</dimen>
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>
     <dimen name="dash_gap_width">10dp</dimen>
     <dimen name="dash_width">10dp</dimen>
-
-    <!-- Activité principale -->
 
 </resources>

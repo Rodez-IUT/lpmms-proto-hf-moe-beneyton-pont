@@ -7,5 +7,7 @@
     <string name="texte_duree">Durée du planing :</string>
     <string name="btn_valider">Valider</string>
     <string name="texte_planning">Planning</string>
-
+    <string name="moins">-</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
 </resources>
