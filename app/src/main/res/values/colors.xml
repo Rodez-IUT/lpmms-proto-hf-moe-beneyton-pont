@@ -7,4 +7,5 @@
     <color name="titre_toolbar">#ffffff</color>
     <color name="background_rectangle">#fafafa</color>
     <color name="border_color_rectangle">#046b33</color>
+    <color name="noir">#000000</color>
 </resources>
