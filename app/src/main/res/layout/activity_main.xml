@@ -41,15 +41,12 @@
             android:text="@string/mdp_oublie"
             android:textStyle="" />
 
-        <RadioButton
-            android:id="@+id/rb_souvenir"
-            style="@style/Libelle"
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marge_libelle"
             android:text="@string/texte_souvenir"
-            android:checked="false"
-            android:onClick="decocher"/>
+            style="@style/Libelle"
+            android:layout_marginTop="@dimen/marge_libelle"/>
 
         <Button
             android:id="@+id/btn_ok"
@@ -57,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/marge_libelle"
-            android:text="@string/btn_ok" />
+            android:text="@string/btn_ok"
+            android:onClick="valider"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -65,7 +63,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/marge_libelle"
             android:padding="0dp"
-            android:src="@drawable/connexion_fbk" />
+            android:src="@drawable/connexion_fbk"
+            android:onClick="connexion_fbk"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -74,7 +73,8 @@
             android:layout_marginTop="@dimen/marge_libelle"
             android:layout_marginBottom="@dimen/marge_libelle"
             android:padding="0dp"
-            android:src="@drawable/connexion_twitter" />
+            android:src="@drawable/connexion_twitter"
+            android:onClick="connexion_twitter"/>
     </LinearLayout>
 
     <include layout="@layout/barre_creation_compte" />
