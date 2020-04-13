@@ -78,6 +78,6 @@
             android:onClick="connexion_twitter"/>
     </LinearLayout>
 
-    <include layout="@layout/barre_creation_compte" />
+    <include layout="@layout/barre_creation_compte"/>
 
 </LinearLayout>

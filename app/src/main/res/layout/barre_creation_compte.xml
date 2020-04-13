@@ -27,6 +27,7 @@
         android:text="@string/creation_compte"
         style="@style/Libelle"
         android:layout_gravity="center"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:onClick="creation_compte"/>
 
 </LinearLayout>
