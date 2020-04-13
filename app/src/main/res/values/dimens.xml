@@ -17,6 +17,7 @@
     <dimen name="switch_marge_gauche">5dp</dimen>
     <dimen name="padding_icone">5dp</dimen>
     <dimen name="dimension_calendrier">30dp</dimen>
+    <dimen name="zero">0dp</dimen>
 
     <!-- Bordure -->
     <dimen name="border_width_rectangle">1dp</dimen>
