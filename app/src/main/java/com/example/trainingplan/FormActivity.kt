@@ -54,7 +54,10 @@ class FormActivity : AppCompatActivity() {
         }
     }
 
-
+    /**
+     * Permet de réduire le nombre de séance
+     * lors du clic sur le bouton
+     */
     fun reduire(view: View) {
         var nb = Integer.parseInt(nbSeance.text.toString())
 
@@ -65,11 +68,13 @@ class FormActivity : AppCompatActivity() {
         nbSeance.setText(nb.toString())
     }
 
+    /**
+     * Permet d'augmenter le nombre de séance
+     * lors du clic sur le bouton
+     */
     fun augmenter(view: View) {
         var nb = Integer.parseInt(nbSeance.text.toString())
-
         nb++
-
         nbSeance.setText(nb.toString())
     }
 
@@ -107,7 +112,7 @@ class FormActivity : AppCompatActivity() {
 
     private fun updateDate(periodeChoisie: EditText) {
         val myFormat = "dd/MM/yy";
-        var formatDate = SimpleDateFormat(myFormat, Locale.FRENCH)
+        val formatDate = SimpleDateFormat(myFormat, Locale.FRENCH)
 
         periodeChoisie.setText(formatDate.format(myCalendar.time))
     }
